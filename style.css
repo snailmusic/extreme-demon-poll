@@ -13,22 +13,17 @@ p {
 	font-size: 3em;
 }
 
-#box-left {
-	position: fixed;
-	left: 0;
-	margin-left: 25em;
+.box {
 	background-color: #cccccc;
 	padding: 4px;
 	border-radius: 4px;
 }
 
-#box-right {
-	position: fixed;
-	right: 0;
-	margin-right: 25em;
-	background-color: #cccccc;
-	padding: 4px;
-	border-radius: 4px;
+.container {
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	justify-content: space-around;
 }
 
 div > p {
