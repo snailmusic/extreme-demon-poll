@@ -51,6 +51,7 @@ referrerpolicy="strict-origin-when-cross-origin"
     button.onclick = () => {
         vote(level.level_id, levels[1-idx].level_id)
     }
+
     button.innerText = "Vote!"
 
     parent.appendChild(title)
