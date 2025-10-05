@@ -52,6 +52,7 @@ referrerpolicy="strict-origin-when-cross-origin"
 
     let button = document.createElement("button")
     button.onclick = () => {
+        button.classList.add("voted")
         vote(level.level_id, levels[1-idx].level_id)
     }
 
@@ -65,7 +66,10 @@ referrerpolicy="strict-origin-when-cross-origin"
     parent.appendChild(button)
 }
 
-document.body.onload = get_levels
+document.body.onload = () => {
+    document.getElementById("reroll").onclick = get_levels
+    get_levels()
+}
 
 async function vote(id, anti_id) {
     console.log("voting for " + id)
@@ -82,8 +86,10 @@ async function vote(id, anti_id) {
     if (error1) {console.error(error1)}
     if (error2) {console.error(error2)}
 
-    alert("thanks for voting!\nnew levels now loading");
-    get_levels()
+    // alert("thanks for voting!\nnew levels now loading");
+    setTimeout(() => {
+        get_levels()
+    }, 500);
 }
 
 // function vote() {
