@@ -43,7 +43,7 @@ function update_display(parent, level, idx) {
     yt.allowFullscreen = true
 
     let id = document.createElement("p")
-    id.innerHTML = `id: <a href="https://gdbrowser.com/${level.level_id}">${level.level_id}</a>`
+    id.innerHTML = `id: <a href="https://gdbrowser.com/${level.level_id}" target="_blank">${level.level_id}</a>`
 
     /*
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
