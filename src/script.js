@@ -51,8 +51,12 @@ referrerpolicy="strict-origin-when-cross-origin"
     */
 
     let button = document.createElement("button")
+    button.classList.add("votebutton")
     button.onclick = () => {
         button.classList.add("voted")
+        for (var voter of document.getElementsByClassName("votebutton")) {
+            voter.disabled = true
+        }
         vote(level.level_id, levels[1-idx].level_id)
     }
 
