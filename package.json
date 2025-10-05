@@ -1,0 +1,21 @@
+{
+  "name": "extreme-demon-poll",
+  "version": "1.0.0",
+  "description": "This is a website that seeks to answer a simple yet complicated question: What's the best Extreme Demon in Geometry Dash?",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "source": "src/index.html",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.58.0",
+    "parcel": "^2.16.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  }
+}
