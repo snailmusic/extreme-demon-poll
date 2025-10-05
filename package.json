@@ -12,10 +12,10 @@
   "source": "src/index.html",
   "license": "ISC",
   "dependencies": {
-    "@supabase/supabase-js": "^2.58.0",
-    "parcel": "^2.16.0"
+    "@supabase/supabase-js": "^2.58.0"
   },
   "devDependencies": {
-    "buffer": "^6.0.3"
+    "buffer": "^6.0.3",
+    "parcel": "^2.16.0"
   }
 }

@@ -77,9 +77,8 @@ async function vote(id, anti_id) {
     if (error1) {console.error(error1)}
     if (error2) {console.error(error2)}
 
-    setTimeout(() => {
-        get_levels()
-    }, 1000);
+    alert("thanks for voting!\nnew levels now loading");
+    get_levels()
 }
 
 // function vote() {
