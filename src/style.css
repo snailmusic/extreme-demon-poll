@@ -19,7 +19,7 @@ html,body {
 	grid-template-areas: "h h v"
 	                     "d d v"
 						 "i b v";
-	grid-template-rows: 3rem 1fr 3.5rem;
+	grid-template-rows: auto 1fr 3.5rem;
 	grid-template-columns: 2fr 0.5fr 3fr;
 	& p {
 	    text-align: left;
