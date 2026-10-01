@@ -14,6 +14,10 @@ html,body {
 
 h1 {
     font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+h3 {
+    margin-top: 0.25rem;
 }
 
 footer {
@@ -94,6 +98,27 @@ iframe {
     						 "i b"
                              "v v";
 	}
+}
+
+@media only screen and (max-width: 53rem) {
+    .nala {
+        display:none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 43rem) {
+    #best_girl {
+        display: none !important;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        display: none;
+    }
 }
 
 div > p {
