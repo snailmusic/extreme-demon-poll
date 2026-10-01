@@ -121,6 +121,28 @@ button {
     position:absolute;
     bottom:0;
     left:1rem;
-    width: 10rem;
+    width: 8rem;
     transition: 0.5s all;
+}
+
+.nala {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    width: 15rem;
+}
+.nalabody {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 1rem;
+}
+
+#nalaface {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 1rem;
+    width: 100%;
 }

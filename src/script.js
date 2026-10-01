@@ -11,6 +11,15 @@ let token
 
 let levels = []
 
+let nalafaces = [
+  new URL("nala/nalaangy.png", import.meta.url),
+  new URL("nala/nalaunamused.png", import.meta.url),
+  new URL("nala/nalaneutral.png", import.meta.url),
+  new URL("nala/nalahappy.png", import.meta.url),
+  new URL("nala/nalastarstruck.png", import.meta.url),
+]
+let nala_face = null
+
 class StarRating extends HTMLElement {
   constructor() {
     super();
@@ -62,6 +71,8 @@ class StarRating extends HTMLElement {
       for (let i = stars.length - 1; i > last_star; i--) {
         stars[i].innerHTML = star0
       }
+
+      nala_face.src = nalafaces[last_star]
     }
 
     wrapper.onclick = callback
@@ -77,6 +88,9 @@ customElements.define("star-rating", StarRating)
 init()
 
 async function init() {
+  nala_face = document.getElementById("nalaface")
+  console.log(nala_face)
+
   let temp = localStorage.getItem("token")
   if (temp) {
     token = temp
